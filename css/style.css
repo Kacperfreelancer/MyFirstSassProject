@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +8,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
 }
 
 .header {
@@ -38,6 +40,7 @@ body {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  text-align: center;
 }
 
 .header .center p {
@@ -57,11 +60,17 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-.about {
+.how-it-works {
   padding: 2em;
+  text-align: center;
 }
 
-.about > .info {
+.how-it-works > h2 {
+  margin: 1.2em 0;
+  font-size: 2rem;
+}
+
+.how-it-works > .info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -74,10 +83,9 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding-bottom: 2em;
-  text-align: center;
 }
 
-.about > .info > .number {
+.how-it-works > .info > .number {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -96,7 +104,176 @@ body {
   color: #5e9387;
 }
 
-.about > .info > .info--title {
-  margin-bottom: 1.5em;
+.how-it-works > .info > .info--title {
+  margin-bottom: 1em;
+  font-size: 1.5rem;
+}
+
+.about-team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2em;
+  text-align: center;
+  background-color: #8fc79a;
+  color: #fff;
+}
+
+.about-team > .description p {
+  text-align: left;
+  font-size: 1.1rem;
+}
+
+.about-team > h2 {
+  margin: 1.2em 0;
+  font-size: 2rem;
+}
+
+.about-team > .img {
+  width: 100vw;
+  margin: 1.2em 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.about-team > .img img {
+  width: 100%;
+}
+
+.clients {
+  text-align: center;
+  padding: 2em;
+}
+
+.clients > h2 {
+  margin: 1.2em 0;
+  font-size: 2rem;
+}
+
+.clients > .img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1em;
+}
+
+.clients > .img > img {
+  border-radius: 5px;
+}
+
+.clients > .img > .big {
+  width: 100%;
+}
+
+.clients > .img > .small {
+  width: 47.2%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.clients > .opinion {
+  margin-top: 2em;
+}
+
+.clients > .advert > .ad {
+  margin-top: 3em;
+}
+
+.ofert {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2em;
+  width: 80%;
+  margin: 1em auto;
+  border: 2px solid #5e9387;
+  border-radius: 10px;
+}
+
+.ofert > ul > li {
+  list-style: none;
+  padding-bottom: 1.2em;
+}
+
+.ofert > ul > li::before {
+  content: "✔";
+  color: #5e9387;
+  padding-right: 8px;
+}
+
+.ofert > button {
+  padding: 1em 4em;
+  margin-top: 1em;
+  background-color: #8fc79a;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 7px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #8fc79a;
+  min-height: 70vh;
+}
+
+.footer .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.footer .contact > input {
+  width: 100%;
+  font-size: 1.2rem;
+  margin-bottom: 1em;
+  padding: 5px;
+}
+
+.footer .contact > textarea {
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 5px;
+}
+
+.footer .contact > h4 {
+  text-align: center;
+  padding: 2em 0;
+  font-size: 1.5rem;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,6 +1,7 @@
 $primary--color: #cee9b6
 $secondary--color: #5e9387
-
+$section--background: #8fc79a
+$padding--section: 2em
 
 *
   margin: 0
@@ -9,6 +10,7 @@ $secondary--color: #5e9387
 
 body
   font-family: 'Montserrat', sans-serif 
+  overflow-x: hidden
 
 .header
   display: flex
@@ -24,6 +26,7 @@ body
     justify-content: center
     align-items: center
     flex-wrap: wrap
+    text-align: center
     p
       padding: 1.5em
       color: #fff
@@ -38,15 +41,18 @@ body
       border-radius: 7px
       font-family: 'Montserrat', sans-serif 
 
-.about
-  padding: 2em
+.how-it-works
+  padding: $padding--section
+  text-align: center
+  >h2
+    margin: 1.2em 0
+    font-size: 2rem
   >.info
     display: flex
     justify-content: center
     align-items: center
     flex-wrap: wrap
     padding-bottom: 2em
-    text-align: center
     >.number
       display: flex
       justify-content: center
@@ -59,4 +65,105 @@ body
       border-radius: 50%
       color: $secondary--color
     >.info--title
-      margin-bottom: 1.5em
+      margin-bottom: 1em
+      font-size: 1.5rem
+
+.about-team
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  align-items: center
+  padding: $padding--section
+  text-align: center
+  background-color: $section--background
+  color: #fff
+  >.description
+    p
+      text-align: left
+      font-size: 1.1rem
+  >h2
+    margin: 1.2em 0
+    font-size: 2rem
+  >.img
+    width: 100vw
+    margin: 1.2em 0
+    flex-shrink: 0
+    img
+      width: 100%
+
+.clients
+  text-align: center
+  padding: $padding--section
+  >h2  
+    margin: 1.2em 0
+    font-size: 2rem
+  >.img
+    display: flex
+    flex-wrap: wrap
+    gap: 1em
+    >img
+      border-radius: 5px
+    >.big
+      width: 100%
+    >.small
+      width: 47.2%
+      align-self: flex-end
+  >.opinion
+    margin-top: 2em
+  >.advert
+    >.ad
+      margin-top: 3em
+
+.ofert
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  padding: $padding--section
+  width: 80%
+  margin: 1em auto
+  border: 2px solid $secondary--color
+  border-radius: 10px
+  >ul
+    >li
+      list-style: none
+      padding-bottom: 1.2em
+      &::before
+        content: "✔"
+        color: $secondary--color
+        padding-right: 8px
+  >button
+    padding: 1em 4em
+    margin-top: 1em
+    background-color: #8fc79a
+    border: none
+    color: #fff
+    font-size: 1rem
+    border-radius: 7px
+    font-family: 'Montserrat', sans-serif 
+    font-weight: bold
+
+.footer
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-wrap: wrap
+  background-color: $section--background
+  min-height: 70vh
+  .contact
+    display: flex
+    flex-wrap: wrap
+    flex-direction: column
+    justify-content: space-around
+    >input
+      width: 100%
+      font-size: 1.2rem
+      margin-bottom: 1em
+      padding: 5px
+    >textarea
+      width: 100%
+      font-size: 1.2rem
+      padding: 5px
+    >h4
+      text-align: center
+      padding: $padding--section 0
+      font-size: 1.5rem
