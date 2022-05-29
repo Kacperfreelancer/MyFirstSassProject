@@ -263,17 +263,33 @@ body {
   font-size: 1.2rem;
   margin-bottom: 1em;
   padding: 5px;
+  border-radius: 5px;
+  border: none;
 }
 
 .footer .contact > textarea {
   width: 100%;
   font-size: 1.2rem;
   padding: 5px;
+  border-radius: 5px;
+  border: none;
 }
 
 .footer .contact > h4 {
   text-align: center;
   padding: 2em 0;
   font-size: 1.5rem;
+}
+
+.footer .contact > button {
+  width: 50%;
+  margin: 2em auto;
+  padding: 1em 3em;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #5e9387;
+  color: #fff;
+  font-weight: bold;
 }
 /*# sourceMappingURL=style.css.map */
