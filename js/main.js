@@ -1,9 +1,10 @@
 const btn1 = document.querySelector(".read--more");
 const btnPopup = document.querySelector(".popupActive");
+const section = document.querySelector(".how-it-works");
 
 const scrollMachine = () => {
-  const scrollValue = 720;
-
+  const scrollValue = section.offsetTop;
+  console.log(section);
   window.scrollTo({
     top: scrollValue,
     behavior: "smooth",

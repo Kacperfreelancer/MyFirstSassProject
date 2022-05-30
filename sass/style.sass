@@ -2,6 +2,7 @@ $primary--color: #cee9b6
 $secondary--color: #5e9387
 $section--background: #8fc79a
 $padding--section: 2em
+$tablet-breakpoint: 768px
 
 *
   margin: 0
@@ -98,16 +99,17 @@ body
     margin: 1.2em 0
     font-size: 2rem
   >.img
-    display: flex
-    flex-wrap: wrap
-    gap: 1em
     >img
       border-radius: 5px
     >.big
       width: 100%
-    >.small
-      width: 47.2%
-      align-self: flex-end
+    >.img-small
+      display: flex
+      justify-content: space-between
+      >.small
+        width: 49.5%
+        border-radius: 5px
+
   >.opinion
     margin-top: 2em
   >.advert
@@ -145,11 +147,11 @@ body
 
 .footer
   display: flex
+  flex-direction: column
   justify-content: center
   align-items: center
-  flex-wrap: wrap
   background-color: $section--background
-  min-height: 70vh
+  min-height: 50vh
   .contact
     display: flex
     flex-wrap: wrap
@@ -220,3 +222,14 @@ body
 .header.active , .how-it-works.active, .about-team.active, .clients.active, .ofert.active, .footer.active 
   filter: blur(10px)
   
+@media (min-width: $tablet-breakpoint) 
+  .how-it-works
+    >.info
+      >.info--title
+        width: 100%
+  .ofert
+    max-width: 50%
+
+  .contact
+    width: 70%
+        
