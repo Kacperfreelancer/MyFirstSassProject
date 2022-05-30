@@ -16,6 +16,7 @@ const popUpVisibility = () => {
   const btnClosePopup = document.querySelector(".exit");
   let divs = [...document.querySelectorAll("body>div")];
   divs.pop();
+  console.log(divs);
 
   const closePopup = () => {
     document.body.style.overflow = "visible";

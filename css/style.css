@@ -58,6 +58,7 @@ body {
   font-size: 1rem;
   border-radius: 7px;
   font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
 }
 
 .how-it-works {
@@ -113,6 +114,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: center;
@@ -138,7 +143,6 @@ body {
 }
 
 .about-team > .img {
-  width: 100vw;
   margin: 1.2em 0;
   -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -358,6 +362,115 @@ body {
   }
   .contact {
     width: 70%;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    font-size: 120%;
+  }
+  .about-team {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .about-team > h2 {
+    width: 100%;
+  }
+  .about-team > .description {
+    width: 50%;
+    padding-right: 2em;
+  }
+  .about-team > .img {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1024px) and (min-width: 1240px) {
+  body {
+    font-size: 140%;
+  }
+  .header .center > p {
+    width: 100%;
+  }
+  .how-it-works {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+  .how-it-works .info .number {
+    width: 5vw;
+    height: 5vw;
+  }
+  .about-team {
+    width: 100vw;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .about-team > .description {
+    width: 50%;
+    padding-left: 10%;
+  }
+  .about-team > .description > p {
+    font-size: 105%;
+  }
+  .about-team > .img {
+    width: 50%;
+    padding-right: 10%;
+  }
+  .about-team > .img > img {
+    height: 80vh;
+  }
+  .clients {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .clients > h2 {
+    width: 100%;
+  }
+  .clients > .img {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .clients > .img > .big {
+    width: 80%;
+  }
+  .clients > .img > .img-small {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .clients > .wrapper {
+    width: 50%;
+  }
+  .clients > .wrapper > .opinion {
+    padding: 2em;
+  }
+  .clients > .wrapper > .advert {
+    padding: 2em;
+  }
+  .clients > .wrapper > .advert > .ad {
+    margin-top: 3em;
+  }
+  .ofert {
+    max-width: 30%;
+    text-align: center;
+  }
+  .ofert > ul {
+    width: 100%;
+  }
+  .contact {
+    max-width: 60%;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -3,6 +3,8 @@ $secondary--color: #5e9387
 $section--background: #8fc79a
 $padding--section: 2em
 $tablet-breakpoint: 768px
+$laptop-breakpoint: 1024px
+$desktop-breakpoint: 1240px
 
 *
   margin: 0
@@ -41,6 +43,7 @@ body
       font-size: 1rem
       border-radius: 7px
       font-family: 'Montserrat', sans-serif 
+      cursor: pointer
 
 .how-it-works
   padding: $padding--section
@@ -71,6 +74,7 @@ body
 
 .about-team
   display: flex
+  flex-direction: column
   flex-wrap: wrap
   justify-content: center
   align-items: center
@@ -86,7 +90,6 @@ body
     margin: 1.2em 0
     font-size: 2rem
   >.img
-    width: 100vw
     margin: 1.2em 0
     flex-shrink: 0
     img
@@ -219,7 +222,7 @@ body
 .popup.active
   display: block
 
-.header.active , .how-it-works.active, .about-team.active, .clients.active, .ofert.active, .footer.active 
+.header.active, .how-it-works.active, .about-team.active, .clients.active, .ofert.active, .footer.active 
   filter: blur(10px)
   
 @media (min-width: $tablet-breakpoint) 
@@ -232,4 +235,81 @@ body
 
   .contact
     width: 70%
-        
+
+@media (min-width: $laptop-breakpoint)
+  body
+    font-size: 120%
+
+  .about-team
+    display: flex
+    flex-direction: row
+    >h2
+      width: 100%
+    >.description
+      width: 50%
+      padding-right: 2em
+    >.img
+      width: 50%
+
+  @media (min-width: $desktop-breakpoint)
+    body
+      font-size: 140%
+
+    .header
+      .center
+        >p
+          width: 100%
+    
+    .how-it-works
+      padding-left: 15%
+      padding-right: 15%
+      .info
+        .number
+          width: 5vw
+          height: 5vw
+      
+    .about-team
+      width: 100vw
+      flex-direction: row
+      >.description
+        width: 50%
+        padding-left: 10%
+        >p
+          font-size: 105%
+      >.img
+        width: 50%
+        padding-right: 10%
+        >img
+          height: 80vh
+    
+    .clients
+      display: flex
+      flex-wrap: wrap
+      justify-content: center
+      >h2
+        width: 100%
+      >.img
+        width: 50%
+        margin: 0 auto
+        >.big
+          width: 80%
+        >.img-small
+          width: 80%
+          margin: 0 auto
+      >.wrapper
+        width: 50%
+        >.opinion
+          padding: $padding--section
+        >.advert
+          padding: $padding--section
+          >.ad
+            margin-top: 3em
+
+    .ofert
+      max-width: 30% 
+      text-align: center
+      >ul
+        width: 100%
+
+    .contact
+      max-width: 60%
