@@ -343,7 +343,7 @@ body {
   display: block;
 }
 
-.header.active, .hot-it-works.active, .about-team.active, .clients.active, .ofert.active, .footer.active {
+.header.active, .how-it-works.active, .about-team.active, .clients.active, .ofert.active, .footer.active {
   -webkit-filter: blur(10px);
           filter: blur(10px);
 }

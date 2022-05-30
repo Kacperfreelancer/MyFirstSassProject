@@ -17,6 +17,7 @@ const popUpVisibility = () => {
   divs.pop();
 
   const closePopup = () => {
+    document.body.style.overflow = "visible";
     popup.classList.remove("active");
     divs.forEach((div) => {
       div.classList.remove("active");
@@ -27,6 +28,7 @@ const popUpVisibility = () => {
   divs.forEach((div) => {
     div.classList.add("active");
   });
+  document.body.style.overflow = "hidden";
   btnClosePopup.addEventListener("click", closePopup);
 };
 
